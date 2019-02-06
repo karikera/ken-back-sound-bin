@@ -12,6 +12,7 @@ typedef struct _krb_wave_format_t krb_wave_format_t;
 typedef struct _krb_sound_info_t krb_sound_info_t;
 typedef struct _krb_sound_callback_t krb_sound_callback_t;
 
+#pragma pack(push, 1)
 struct _krb_wave_format_t
 {
 	uint16_t formatTag;
@@ -22,6 +23,7 @@ struct _krb_wave_format_t
 	uint16_t bitsPerSample;
 	uint16_t size;
 };
+#pragma pack(pop)
 
 struct _krb_sound_info_t
 {
