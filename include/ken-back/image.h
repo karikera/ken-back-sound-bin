@@ -63,7 +63,7 @@ struct _krb_image_callback_t
 	krb_image_palette_t* palette;
 };
 
-bool KEN_EXTERNAL krb_load_image(const fchar_t* extension, krb_image_callback_t* callback, krb_file_t* file);
-bool KEN_EXTERNAL krb_save_image(const fchar_t* extension, const krb_image_save_info_t* info, krb_file_t* file);
+bool KEN_EXTERNAL krb_load_image(krb_extension_t extension, krb_image_callback_t* callback, krb_file_t* file);
+bool KEN_EXTERNAL krb_save_image(krb_extension_t extension, const krb_image_save_info_t* info, krb_file_t* file);
 
 _KR_C_MODE_END

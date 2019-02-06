@@ -38,6 +38,6 @@ struct _krb_sound_callback_t
 	short* (*start)(krb_sound_callback_t* _this, krb_sound_info_t* _info);
 };
 
-bool KEN_EXTERNAL krb_sound_load(krb_sound_callback_t * callback, krb_file_t* file);
+bool KEN_EXTERNAL krb_sound_load(krb_extension_t extension, krb_sound_callback_t * callback, krb_file_t* file);
 
 _KR_C_MODE_END
